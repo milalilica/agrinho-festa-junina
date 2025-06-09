@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Festas da Agricultura</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <h1>Festa Junina</h1>
-    <H2>Sua relação com o campo e a cidade</H2>
+  <header>
+    <h1>🌽 Festas da Agricultura 🌻</h1>
+    <p>Celebrações que unem o campo e a cidade!</p>
+    <div class="font-buttons">
+      <button onclick="adjustFontSize(1)">A+</button>
+      <button onclick="adjustFontSize(-1)">A-</button>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>🎉 Festa Junina</h2>
+      <img src="https://images.unsplash.com/photo-1593476144598-35acac1b3e9e?auto=format&fit=crop&w=800&q=80" alt="Festa Junina" />
+      <p>Celebrada em todo o Brasil, a Festa Junina traz o melhor da roça para a cidade: danças típicas, milho verde, fogueira e quadrilha!</p>
+    </section>
+
+    <section>
+      <h2>🍅 Feira do Produtor</h2>
+      <img src="https://images.unsplash.com/photo-1615485733332-cf9428b356d4?auto=format&fit=crop&w=800&q=80" alt="Feira do Produtor" />
+      <p>Espaço onde agricultores locais expõem seus produtos diretamente à comunidade urbana, promovendo economia local e alimentação saudável.</p>
+    </section>
+
+    <section>
+      <h2>🚜 ExpoAgro</h2>
+      <img src="https://images.unsplash.com/photo-1578646386563-9c1c785c1e5e?auto=format&fit=crop&w=800&q=80" alt="Exposição Agropecuária" />
+      <p>Grandes exposições agrícolas e pecuárias conectam o setor produtivo rural com tecnologia, inovação e a população urbana.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Agricultura e Cultura | Criado com 🌱 e 💛</p>
+  </footer>
+
+  <script>
+    let fontSize = 16;
+    function adjustFontSize(change) {
+      fontSize += change;
+      document.body.style.fontSize = fontSize + "px";
+    }
+  </script>
 </body>
 </html>
